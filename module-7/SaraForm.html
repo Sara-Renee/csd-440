@@ -1,0 +1,195 @@
+<!--Sara White - CSD440 - Assignment 7.2-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create a Superhero</title>
+
+    <link rel="stylesheet" href="SaraForm.css">
+</head>
+
+<body>
+
+    <main class="form-container">
+
+        <h1>Create a Superhero</h1>
+
+        <p class="intro">
+            Every great superhero needs super powers, a compelling origin story, a few flaws and a cool name.
+        </p>
+
+        <form action="SaraResponse.php" method="post">
+
+            <!-- choices for primary super power -->
+            <div class="form-group">
+                <label for="primaryAbility">Choose a primary special ability:</label>
+
+                <select id="primaryAbility" name="primaryAbility" required>
+                    <option value="">-- Select an ability --</option>
+                    <option value="Flying">Flying</option>
+                    <option value="Laser Eyes">Laser Eyes</option>
+                    <option value="Super Strength">Super Strength</option>
+                    <option value="Invisibility">Invisibility</option>
+                </select>
+            </div>
+
+
+            <!-- choices for secondary super power -->
+            <div class="form-group">
+                <label for="secondaryAbility">Choose a secondary special ability:</label>
+
+                <select id="secondaryAbility" name="secondaryAbility" required>
+                    <option value="">-- Select an ability --</option>
+                    <option value="Telepathy">Telepathy</option>
+                    <option value="Telekinesis">Telekinesis</option>
+                    <option value="Super Intelligence">Super Intelligence</option>
+                </select>
+            </div>
+
+
+            <!-- origin story selection -->
+            <fieldset>
+                <legend>Choose an origin story:</legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="originStory"
+                        value="Tormented vigilante with a trust fund"
+                        required>
+                    Tormented vigilante with a trust fund
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="originStory"
+                        value="Scientist transformed by experiment gone wrong">
+                    Scientist transformed by experiment gone wrong
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="originStory"
+                        value="Born with cool powers and misunderstood by society">
+                    Born with cool powers and misunderstood by society
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="originStory"
+                        value="Magical being with an ancient, mythological family tree">
+                    Magical being with an ancient, mythological family tree
+                </label>
+            </fieldset>
+
+
+            <!-- character flaw(s) selection -->
+            <fieldset>
+                <legend>Pick at least one character flaw:</legend>
+
+                <p class="helper-text">
+                    Even superheroes need something to work on.
+                </p>
+
+                <label>
+                    <input type="checkbox" name="characterFlaws[]" value="Hubris">
+                    Hubris
+                </label>
+
+                <label>
+                    <input type="checkbox" name="characterFlaws[]" value="Martyr Complex">
+                    Martyr complex
+                </label>
+
+                <label>
+                    <input type="checkbox" name="characterFlaws[]" value="Self-Doubt">
+                    Self-doubt
+                </label>
+
+                <label>
+                    <input type="checkbox" name="characterFlaws[]" value="Emotionally Distant">
+                    Emotionally distant
+                </label>
+            </fieldset>
+
+
+            <!-- superhero name -->
+            <fieldset>
+                <legend>Create your superhero name:</legend>
+
+                <div class="name-fields">
+                    <div>
+                        <label for="heroAdjective">Adjective:</label>
+
+                        <input
+                            type="text"
+                            id="heroAdjective"
+                            name="heroAdjective"
+                            maxlength="30"
+                            placeholder="Amazing"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="heroNoun">Noun:</label>
+
+                        <input
+                            type="text"
+                            id="heroNoun"
+                            name="heroNoun"
+                            maxlength="30"
+                            placeholder="Badger"
+                            required>
+                    </div>
+                </div>
+            </fieldset>
+
+
+            <!-- costume colors using a color picker -->
+            <fieldset>
+                <legend>Choose your superhero outfit colors:</legend>
+
+                <div class="color-fields">
+
+                    <div>
+                        <label for="primaryColor">Primary color:</label>
+                        <input
+                            type="color"
+                            id="primaryColor"
+                            name="primaryColor"
+                            value="#3366cc">
+                    </div>
+
+                    <div>
+                        <label for="secondaryColor">Secondary color:</label>
+                        <input
+                            type="color"
+                            id="secondaryColor"
+                            name="secondaryColor"
+                            value="#cc3366">
+                    </div>
+
+                </div>
+            </fieldset>
+
+
+            <!-- form buttons -->
+            <div class="button-group">
+                <input type="submit" value="Create Superhero">
+                <input type="reset" value="Clear Fields">
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

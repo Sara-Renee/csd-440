@@ -1,0 +1,126 @@
+/* 
+Sara White - CSD440 - Assignment 7.2 
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6e6a6a;
+    color: #222222;
+}
+
+.form-container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #bdb5b5;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group,
+fieldset {
+    margin-bottom: 25px;
+}
+
+fieldset {
+    padding: 20px;
+    border: 1px solid #bbbbbb;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.helper-text {
+    margin-top: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.name-fields,
+.color-fields {
+    display: flex;
+    gap: 20px;
+}
+
+.name-fields > div,
+.color-fields > div {
+    flex: 1;
+}
+
+input[type="color"] {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #333333;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #dddddd;
+    color: #222222;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.85;
+}
