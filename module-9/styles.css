@@ -1,0 +1,190 @@
+<!--Sara White - CSD440 - Module 9-->
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f1ec;
+    color: #252525;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #302f4d;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: min(900px, 90%);
+    margin: 2rem auto;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px
+        rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+    color: #302f4d;
+    margin-top: 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.nav-links a,
+button {
+    display: inline-block;
+    background-color: #6257a5;
+    color: white;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav-links a:hover,
+button:hover {
+    background-color: #443b80;
+}
+
+.secondary-links a {
+    background-color: #666;
+}
+
+.secondary-links a:hover {
+    background-color: #444;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.35rem;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #6257a5;
+    border-color: #6257a5;
+}
+
+/* favorite music records table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px
+        rgba(0, 0, 0, 0.12);
+}
+
+th,
+td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #302f4d;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f1ec;
+}
+
+tr:hover {
+    background-color: #ece8f5;
+}
+
+td {
+    color: #252525;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.success {
+    padding: 0.75rem;
+    background-color: #e5f5e5;
+    border: 1px solid #4d8b4d;
+    border-radius: 5px;
+}
+
+.error {
+    padding: 0.75rem;
+    background-color: #ffe6e6;
+    border: 1px solid #b94a48;
+    border-radius: 5px;
+}
+
+.back-link {
+    margin-top: 1rem;
+}
+
+.back-link a {
+    color: #443b80;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        text-align: center;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: 0.6rem;
+    }
+}
