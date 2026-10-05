@@ -1,0 +1,157 @@
+/* Sara White - CSD440 - Assignment 10.2 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f1ec;
+    color: #252525;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #462347;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: min(760px, 90%);
+    margin: 2rem auto;
+}
+
+.form-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+    color: #302f4d;
+    margin-top: 0;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+legend {
+    color: #302f4d;
+    font-weight: bold;
+    padding: 0 0.4rem;
+}
+
+.section-intro {
+    margin-top: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.35rem;
+}
+
+.required,
+.required-note {
+    color: #b42318;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid #6257a5;
+    border-color: #6257a5;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #7e3881;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #462347;
+}
+
+input[type="reset"] {
+    background-color: #666;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #444;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #6257a5;
+    color: white;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.back-button:hover {
+    background-color: #443b80;
+}
+
+@media (max-width: 600px) {
+    .form-card {
+        padding: 1.25rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+    }
+}

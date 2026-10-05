@@ -1,0 +1,114 @@
+<!--Sara White - CSD440 - Assignment 10.2-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me JSON Form</title>
+
+    <link rel="stylesheet" href="SaraStyles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>User Input Form</h1>
+    <p>This page takes user input and returns the input in JSON format.</p>
+</header>
+
+<main class="form-container">
+
+    <section class="form-card">
+        <h2>About Me</h2>
+
+        <p>
+            Answer the questions below to create your "About Me" profile.
+            <span class="required-note">All fields are required.</span>
+        </p>
+
+        <form action="SaraResponse.php" method="post">
+
+            <!-- fields for basic info -->
+            <fieldset>
+                <legend>Basic Information</legend>
+
+                <div class="form-group">
+                    <label for="firstName">First Name <span class="required">*</span></label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastInitial">Last Initial <span class="required">*</span></label>
+                    <input type="text" id="lastInitial" name="lastInitial" maxlength="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="favSubject">Favorite Subject <span class="required">*</span></label>
+                    <input type="text" id="favSubject" name="favSubject" placeholder="Example: Computer Science" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="favFood">Favorite Food <span class="required">*</span></label>
+                    <input type="text" id="favFood" name="favFood" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favorites</legend>
+
+                <p class="section-intro">
+                    Enter two favorite pastimes, a movie you love, and an album you love.
+                </p>
+
+                <!-- fields for pastimes/movie/album -->
+                <div class="form-group">
+                    <label for="pastime1">First Pastime <span class="required">*</span></label>
+                    <input type="text" id="pastime1" name="pastime1" placeholder="Example: Walking my dog" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pastime2">Second Pastime <span class="required">*</span></label>
+                    <input type="text" id="pastime2" name="pastime2" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="movie">A Movie You Love <span class="required">*</span></label>
+                    <input type="text" id="movie" name="movie" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="album">An Album You Love <span class="required">*</span></label>
+                    <input type="text" id="album" name="album" placeholder="Example: Rubber Soul by The Beatles" required>
+                </div>
+            </fieldset>
+
+            <!-- form buttons -->
+            <div class="button-group">
+                <input type="submit" value="Create My Profile">
+                <input type="reset" value="Clear Fields">
+            </div>
+
+        </form>
+    </section>
+
+</main>
+
+</body>
+</html>
+
+
+<!--
+References
+Erickson, J. (2024, April 4). What Is JSON? Oracle. https://www.oracle.com/database/what-is-json/
+ 
+GeeksforGeeks. (2025, July 23). JavaScript JSON Objects.https://www.geeksforgeeks.org/javascript/javascript-json-objects/
+
+GeeksforGeeks. (2025, August 5). PHP JSON Pretty Print. https://www.geeksforgeeks.org/html/php-json-pretty-print/
+ 
+W3Schools. (n.d.). JavaScript JSON Values. https://www.w3schools.com/js/js_json_datatypes.asp
+
+W3Schools. (n.d.). PHP and JSON. https://www.w3schools.com/php/php_json.asp
+
+-->
